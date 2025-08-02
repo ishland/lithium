@@ -43,8 +43,8 @@ public abstract class MobMixin extends LivingEntity implements NavigatingEntity 
         return this.registeredNavigation;
     }
 
-    @Inject(method = "startRiding(Lnet/minecraft/world/entity/Entity;Z)Z", at = @At("RETURN"))
-    private void onNavigationReplacement(Entity entity, boolean force, CallbackInfoReturnable<Boolean> cir) {
+    @Inject(method = "startRiding", at = @At("RETURN"))
+    private void onNavigationReplacement(Entity entity, boolean bl, boolean bl2, CallbackInfoReturnable<Boolean> cir) {
         this.lithium$updateNavigationRegistration();
     }
 
