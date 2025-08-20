@@ -1,4 +1,4 @@
-@MixinConfigOption(description = "Entity shape contexts initialize rarely used fields only on first use"
+@MixinConfigOption(description = "Entity shape contexts initialize rarely used fields only on first use", enabled = false
 )
 package net.caffeinemc.mods.lithium.mixin.shapes.lazy_shape_context;
 

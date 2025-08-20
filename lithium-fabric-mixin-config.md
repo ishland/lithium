@@ -510,7 +510,7 @@ Various VoxelShape optimizations
 Use a faster collection for the full cube test cache
   
 ### `mixin.shapes.lazy_shape_context`
-(default: `true`)  
+(default: `false`)  
 Entity shape contexts initialize rarely used fields only on first use
   
 ### `mixin.shapes.optimized_matching`
