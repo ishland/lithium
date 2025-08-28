@@ -90,7 +90,6 @@
     "chunk.no_locking.PalettedContainerMixin",
     "chunk.no_validation.SimpleBitStorageMixin",
     "chunk.no_validation.ZeroBitStorageMixin",
-    "chunk.palette.PalettedContainer$StrategyMixin",
     "chunk.serialization.PalettedContainerMixin",
     "chunk.serialization.SimpleBitStorageMixin",
     "collections.attributes.AttributeMapMixin",

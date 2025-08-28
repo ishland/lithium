@@ -4,6 +4,7 @@ import net.caffeinemc.mods.lithium.common.LithiumMod;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
+import org.spongepowered.asm.mixin.MixinEnvironment;
 
 public class LithiumFabricMod implements ModInitializer {
 
@@ -14,5 +15,7 @@ public class LithiumFabricMod implements ModInitializer {
                 .orElseThrow(NullPointerException::new);
 
         LithiumMod.onInitialization(mod.getMetadata().getVersion().getFriendlyString());
+
+//        MixinEnvironment.getCurrentEnvironment().audit();
     }
 }

@@ -16,7 +16,7 @@ accessible method net/minecraft/util/SortedArraySet <init> (ILjava/util/Comparat
 accessible method net/minecraft/world/entity/ai/village/poi/PoiSection isValid ()Z
 accessible method net/minecraft/world/level/chunk/PalettedContainer$Configuration <init> (Lnet/minecraft/world/level/chunk/Palette$Factory;I)V
 accessible method net/minecraft/world/level/chunk/PalettedContainer$Strategy <init> (I)V
-accessible method net/minecraft/world/level/chunk/PalettedContainer$Strategy calculateBitsForSerialization (Lnet/minecraft/core/IdMap;I)I
+accessible method net/minecraft/world/level/chunk/PalettedContainer$Strategy calculateBitsForSerialization (II)I
 accessible method net/minecraft/world/level/material/Fluid isEmpty ()Z
 accessible method net/minecraft/world/level/pathfinder/WalkNodeEvaluator getPathTypeFromState (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/PathType;
 accessible method net/minecraft/world/level/redstone/RedstoneWireEvaluator getWireSignal (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)I
