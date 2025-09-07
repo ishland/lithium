@@ -12,37 +12,37 @@ public interface WorldBorderListenerOnce extends BorderChangeListener {
     }
 
     @Override
-    default void onBorderSizeSet(WorldBorder border, double size) {
+    default void onSetSize(WorldBorder border, double size) {
         this.lithium$onWorldBorderShapeChange(border);
     }
 
     @Override
-    default void onBorderSizeLerping(WorldBorder border, double fromSize, double toSize, long time) {
+    default void onLerpSize(WorldBorder border, double fromSize, double toSize, long time) {
         this.lithium$onWorldBorderShapeChange(border);
     }
 
     @Override
-    default void onBorderCenterSet(WorldBorder border, double centerX, double centerZ) {
+    default void onSetCenter(WorldBorder border, double centerX, double centerZ) {
         this.lithium$onWorldBorderShapeChange(border);
     }
 
     @Override
-    default void onBorderSetWarningTime(WorldBorder border, int warningTime) {
+    default void onSetWarningTime(WorldBorder border, int warningTime) {
 
     }
 
     @Override
-    default void onBorderSetWarningBlocks(WorldBorder border, int warningBlockDistance) {
+    default void onSetWarningBlocks(WorldBorder border, int warningBlockDistance) {
 
     }
 
     @Override
-    default void onBorderSetDamagePerBlock(WorldBorder border, double damagePerBlock) {
+    default void onSetDamagePerBlock(WorldBorder border, double damagePerBlock) {
 
     }
 
     @Override
-    default void onBorderSetDamageSafeZOne(WorldBorder border, double safeZoneRadius) {
+    default void onSetSafeZone(WorldBorder border, double safeZoneRadius) {
 
     }
 }

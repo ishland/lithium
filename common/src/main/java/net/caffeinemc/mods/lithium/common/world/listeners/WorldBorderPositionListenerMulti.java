@@ -25,42 +25,42 @@ public class WorldBorderPositionListenerMulti implements BorderChangeListener {
     }
 
     @Override
-    public void onBorderSizeSet(WorldBorder border, double size) {
+    public void onSetSize(WorldBorder border, double size) {
         for (WorldBorderListenerOnce listener : this.delegate.keySet()) {
-            listener.onBorderSizeSet(border, size);
+            listener.onSetSize(border, size);
         }
         this.delegate.clear();
     }
 
     @Override
-    public void onBorderSizeLerping(WorldBorder border, double fromSize, double toSize, long time) {
+    public void onLerpSize(WorldBorder border, double fromSize, double toSize, long time) {
         for (WorldBorderListenerOnce listener : this.delegate.keySet()) {
-            listener.onBorderSizeLerping(border, fromSize, toSize, time);
+            listener.onLerpSize(border, fromSize, toSize, time);
         }
         this.delegate.clear();
     }
 
     @Override
-    public void onBorderCenterSet(WorldBorder border, double centerX, double centerZ) {
+    public void onSetCenter(WorldBorder border, double centerX, double centerZ) {
         for (WorldBorderListenerOnce listener : this.delegate.keySet()) {
-            listener.onBorderCenterSet(border, centerX, centerZ);
+            listener.onSetCenter(border, centerX, centerZ);
         }
         this.delegate.clear();
     }
 
     @Override
-    public void onBorderSetWarningTime(WorldBorder border, int warningTime) {
+    public void onSetWarningTime(WorldBorder border, int warningTime) {
     }
 
     @Override
-    public void onBorderSetWarningBlocks(WorldBorder border, int warningBlockDistance) {
+    public void onSetWarningBlocks(WorldBorder border, int warningBlockDistance) {
     }
 
     @Override
-    public void onBorderSetDamagePerBlock(WorldBorder border, double damagePerBlock) {
+    public void onSetDamagePerBlock(WorldBorder border, double damagePerBlock) {
     }
 
     @Override
-    public void onBorderSetDamageSafeZOne(WorldBorder border, double safeZoneRadius) {
+    public void onSetSafeZone(WorldBorder border, double safeZoneRadius) {
     }
 }
